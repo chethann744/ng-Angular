@@ -1,0 +1,11 @@
+body {
+    border: 10px red solid;
+}
+#header1{
+    background-color: blueviolet;
+    width: 300px;
+}
+#footer1{
+    text-align: center;
+    background-color: blueviolet;
+}
