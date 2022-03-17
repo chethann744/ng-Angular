@@ -1,3 +1,7 @@
-body{
-    border: 20px red solid;
+#thbs1{
+    border: 40px green solid;
+    background-color: lightblue;
+}
+.thbs2{
+    background-color: black;
 }
