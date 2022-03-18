@@ -6,3 +6,10 @@ form{
 body{
     border: 1px;
 }
+div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#signup{
+    margin-left: 50px;
+}
