@@ -1,0 +1,56 @@
+body{
+    background-color: lightgreen;
+    background-image: url("img_tree.gif"), url("paper.gif");
+    }
+    
+.thbs-row{
+    border: 2px black solid;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 100px;
+    padding: 5px 20px;
+}
+.end{
+    border: 2px black solid;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 100px;
+    padding: 5px 20px;
+
+}
+.thbs-text{
+    width: 200px;
+    float: left;
+    font-size: 14px;
+}
+.thbs-graphics {
+    float: right;
+    
+}
+.back{
+    position:relative;
+padding-left: 150px;
+}
+.game{
+    width: 100px;
+    height: 100px;
+}
+#game{
+    float: left;
+}
+.pom{
+    width: 100px;
+    height: 100px;
+}
+#pom{
+    float: right;
+    float: left;
+}
+.top{
+    width: 100px;
+    height: 100px;
+}
+#top{
+    float: right;
+float: left;
+}
