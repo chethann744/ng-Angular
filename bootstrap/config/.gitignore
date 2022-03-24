@@ -1,0 +1,10 @@
+node_modules
+
+/font/fontawsom/js/*
+/font/fontawsom/less/*
+/font/fontawsom/metadata/*
+/font/fontawsom/scss/*
+/font/fontawsom/svgs/*
+/font/fontawsom/css/*.min.css
+/font/fontawsom/sprites/*
+

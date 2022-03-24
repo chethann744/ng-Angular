@@ -1,0 +1,24 @@
+{
+  "name": "thbs",
+  "version": "1.0.0",
+  "description": "demo for bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethann744/thbs_mean_mern.git"
+  },
+  "author": "chethan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chethann744/thbs_mean_mern/issues"
+  },
+  "homepage": "https://github.com/chethann744/thbs_mean_mern#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "moment": "^2.29.1",
+    "react": "^17.0.2"
+  }
+}
