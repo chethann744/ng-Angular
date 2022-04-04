@@ -17,3 +17,7 @@ const car2={
 };
 let carobj=Object.assign(car,car2);
 console.log(carobj)
+
+const man={
+    firstname:'chethan'
+}

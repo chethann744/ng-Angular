@@ -1,0 +1,13 @@
+<p>list works!</p>
+<div class="row">
+    <!-- <div *ngFor="let myelm of itemList" class="card col m-3"> -->
+        <h2>This just loop over object</h2>
+        <div *ngFor="let myelm of itemList" class="card col m-3">
+            <img src="{{myelm.imageLink}}" width="200" height="300" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title {{myelm.title}}</h5>
+
+                <a href="{{myelm.link}}" target="_blank" class="btn btn-primary">{{myelm.btnText}} </a>
+            </div>
+        </div>
+    </div>
