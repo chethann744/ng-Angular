@@ -7,6 +7,11 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
+import { ComponantComponent } from './componant/componant.component';
+import { ParentListComponent } from './parent-list/parent-list.component';
+import { ChildItemComponent } from './child-item/child-item.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ListComponent } from './list/list.component';
     FooterComponent,
     SidebarComponent,
     LoginComponent,
-    ListComponent
+    ListComponent,
+    ComponantComponent,
+    ParentListComponent,
+    ChildItemComponent,
+    ContactListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule

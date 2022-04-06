@@ -1,0 +1,29 @@
+<p>componant works!</p>
+<ul>
+    <h3>I am *ngSwitch Case</h3>
+            <li *ngFor="let item of person" [ngSwitch]="item.country">
+                <div *ngSwitchCase="'IND'" class="text-info">i am in india</div>
+                <div *ngSwitchCase="'UK'" class="text-danger">i am in uk</div>
+                <div *ngSwitchCase="'USA'" class="text-primary">i am in usa</div>
+                <div *ngSwitchDefault class="text-success"> I am not part of any country</div>
+
+            </li>
+</ul>
+
+<ul>
+    <h2>I am ngStyle with switch case in .ts file</h2>
+    <li *ngFor="let item of person" [ngSwitch]="item.country">
+        <div [ngStyle]="{'color': getColors(item.country)}"> my Name is {{item.name}} and I am from {{item.country}}
+        </div>
+    </li>
+</ul> 
+
+<ul>
+    <h3>I am in ngClass</h3>
+    <li *ngFor="let item of person">
+        <div [ngClass]="{
+            'text-primary':item.country === 'IND',
+            'text-danger':item.country  === 'USA'
+        }">My name is {{item.name}} i am from {{item.country}}</div>
+    </li>
+</ul>
