@@ -1,0 +1,20 @@
+<p>login works!</p>
+<div class="container-fluid border border-info m-2 p-3">
+    {{logfo.value | json}}
+    <form novalidate [formGroup]="logfo">
+        <div class="form-group">
+            <label>UserName</label>
+            <input formControlName="uname" type="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input formControlName="password" type="password" class="form-control">
+        </div>
+        <div class="form-group m-5">
+            <input (click)="getValues()" type="button" value="Submit">
+        </div>
+        <div>
+            <a class="nav-link" href="/registration">new registration?</a>
+        </div>
+    </form>
+</div>

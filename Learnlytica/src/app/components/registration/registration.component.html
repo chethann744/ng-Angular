@@ -1,0 +1,41 @@
+<p>registration works!</p>
+<div class="container" style="background-color: lightgreen;">
+    {{reg.value | json}}
+    <form novalidate [formGroup]="reg">
+        <div><h1 style="text-align: center;"><i>REGISTRATION PAGE</i></h1></div>
+        <div class="mb-3">
+            <label for="exampleInputFirstName1" class="form-label">First Name:</label>
+            <input formControlName="fname" type="text" required class="form-control" id="exampleInputFirstName1" aria-describedby="firstnameHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputLastName1" class="form-label">Last Name:</label>
+            <input formControlName="lname" type="text" required class="form-control" id="exampleInputLastName1" aria-describedby="lastnameHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputDOB1" class="form-label">Date Of Birth:</label>
+            <input formControlName="dob" type="date" required class="form-control" id="exampleInputDOB1" aria-describedby="dobHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputMobileNumber1" class="form-label">Mobile Number:</label>
+            <input formControlName="mobile" type="number" required class="form-control" id="exampleInputMobileNumber1" aria-describedby="mobilenumberHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input formControlName="email" type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password:</label>
+            <input formControlName="password" type="password" required class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputConfirmPassword1" class="form-label">Confirm Password:</label>
+            <input formControlName="cpassword" type="password" required class="form-control" id="exampleInputConfirmPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
