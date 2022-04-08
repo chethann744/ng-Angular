@@ -6,15 +6,31 @@
             <div class="form-group">
                 <label>First Name</label>
                 <input formControlName="fname" type="text" class="form-control">
+                <div *ngIf="myform.controls['fname'].touched 
+                        && myform.controls['fname'].invalid" class="text-danger">
+                    <b>* First Name is required field</b>
+                </div>
             </div>
             <div class="form-group">
                 <label>Last Name</label>
                 <input formControlName="lname" type="text" class="form-control">
+                <div *ngIf="myform.controls['lname'].touched 
+                && myform.controls['lname'].invalid" class="text-danger">
+                    <b>* Last Name is required field</b>
+                </div>
             </div>
         </fieldset>
         <div class="form-group">
             <label>Email</label>
             <input formControlName="email_thbs" type="email" class="form-control">
+            <div class="text-danger" *ngIf="myform.controls['email_thbs'].touched 
+            && myform.controls['email_thbs'].invalid">
+                <p *ngIf="myform.controls['email_thbs'].errors?.['required']">Email is required</p>
+                <p *ngIf="myform.controls['email_thbs'].errors?.['email']">Please enter valid email</p>
+                <p *ngIf="myform.controls['email_thbs'].errors?.['minlength']">Email min length should 4 char
+                </p>
+
+            </div>
         </div>
         <div class="form-group">
             <label>Password</label>
@@ -29,7 +45,7 @@
         </div>
 
         <div class="form-group m-5">
-            <input (click)="getValues()" type="button" value="Submit" >
+            <input (click)="getValues()" type="button" value="Submit">
         </div>
     </form>
 

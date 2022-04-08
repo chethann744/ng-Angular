@@ -1,2 +1,9 @@
 <p>list-course works!</p>
-<app-course></app-course>
+<div class="row">
+    <div class="col" *ngFor="let course of cList?.['sub-home'].data">
+        <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+        </app-course>
+    </div>
+</div>
+
+
