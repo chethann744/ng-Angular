@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,8 +17,14 @@ import { AddressComponent } from './components/address/address.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
-import { RegistrationComponent } from './components/registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatSliderModule} from '@angular/material/slider';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MaterialExampleModule } from './materials/materials.module';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
+import { DetailProfileComponent } from './detail-profile/detail-profile.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +40,18 @@ import { HttpClientModule } from '@angular/common/http';
     AddressComponent,
     ContactFormComponent,
     LoginComponent,
-    RegistrationComponent
+    ListProfilesComponent,
+    DetailProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatDialogModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
