@@ -5,6 +5,7 @@ import { ListContactComponent } from './components/list-contact/list-contact.com
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 import { ServicesComponent } from './components/services/services.component';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'profiles', component: ListProfilesComponent },
   { path: 'contact', component: ListContactComponent },
   { path: 'profiles/:pid',  component: DetailProfileComponent },
+  { path: 'rxjs', component: ReactiveComponent },
   { path: '**', component: NotFoundComponent },
   { path: '', component: HomeComponent }
 

@@ -23,6 +23,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MaterialExampleModule } from './materials/materials.module';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { DetailProfileComponent } from './detail-profile/detail-profile.componen
     ContactFormComponent,
     LoginComponent,
     ListProfilesComponent,
-    DetailProfileComponent
+    DetailProfileComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,
