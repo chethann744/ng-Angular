@@ -1,5 +1,6 @@
 <p>list-profiles works!</p>
-<h1>{{mydata | json}}</h1>
+<h1>{{userTitle | title: 'Mr...'}}</h1>
+<!-- <h1>{{mydata | json}}</h1> -->
 <ul>
   <li *ngFor="let user of mydata">{{user.name}}->{{user.city}}->{{user.Title}}</li>
   

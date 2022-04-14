@@ -1,0 +1,19 @@
+{
+  "name": "thbs_mean_mern",
+  "version": "1.0.0",
+  "description": "'This learning project'",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethann744/ng-Angular.git"
+  },
+  "author": "chethan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chethann744/ng-Angular/issues"
+  },
+  "homepage": "https://github.com/chethann744/ng-Angular#readme"
+}

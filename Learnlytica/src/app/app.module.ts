@@ -24,6 +24,10 @@ import { MaterialExampleModule } from './materials/materials.module';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TitlePipe } from './pipes/title.pipe';
+import { BraketPipe } from './pipes/braket.pipe';
+import { ThbsBackgroundDirective } from './directives/thbs-background.directive';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 
 @NgModule({
@@ -43,7 +47,11 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
     LoginComponent,
     ListProfilesComponent,
     DetailProfileComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    TitlePipe,
+    BraketPipe,
+    ThbsBackgroundDirective,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,

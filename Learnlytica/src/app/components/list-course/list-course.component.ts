@@ -8,6 +8,8 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class ListCourseComponent implements OnInit {
 cList:any
+myTitle : string = 'THBS';
+braket:number=100;
   constructor(private mConfg: ConfigService) { }
 
   ngOnInit(): void {
