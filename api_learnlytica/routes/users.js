@@ -30,12 +30,17 @@ let dbConnection = require('./../db/db').localConnect();
 //     res.send(result)
 //   })
 // });
-router.post('/', function (req, res, next) {
-  res.send('I am post call');
+// router.post('/', function (req, res, next) {
+//   res.send('I am post call');
   // dbConnection.query('select * from user_profile', (error, results, fields) => {
   //   if (error) throw error;
   //   res.send(results)
   // });
+  router.post('/contact', function (req, res, next) {
+
+    console.log(req.body);
+    
+    res.send('I am post call');
 
 });
 
